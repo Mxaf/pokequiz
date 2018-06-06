@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+    font-family: "Lato", sans-serif;
+    background-image: url(img/back.jpg);
+    background-size: cover;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-image: url(img/back.jpg);
+    background-size: cover;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+    
+.infos{
+    text-align: center;
+    color: white;
+    margin-top: 25%;
+    font-size: 23px;
+    }
+.comecar{
+    background-color: #00b787bf;
+    color: white;
+    border: 0px;
+    padding: 5px 20px;
+    }
+</style>
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="geracao1/index.html">1º Geração</a>
+  <a href="geracao2/index.html">2º Geração</a>
+  <a href="geracao3/index.html">3º Geração</a>
+  <a href="geracao4/index.html">4º Geração</a>
+</div>
+<div class="infos">
+<div><img src="img/pokeballs.png" width="50%"></div>
+<h2>Pokemon quiz</h2>
+<p>Junte-se a nós nessa aventura e conheça um pouco mais sobre cada pokemon.</p>
+<button class="comecar" style="font-size:30px;cursor:pointer" onclick="openNav()"> Começar</button>
+</div>
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "100%";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+     
+</body>
+</html> 
